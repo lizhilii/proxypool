@@ -1,3 +1,4 @@
+import os
 # Redis数据库服务
 REDIS_HOST = '127.0.0.1'          # 此处填写redis服务host地址
 REDIS_PORT = 6379
