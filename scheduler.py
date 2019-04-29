@@ -4,12 +4,12 @@ import time
 from multiprocessing import Process
 from aiohttp import ClientConnectionError as ProxyConnectionError, ServerDisconnectedError, ClientResponseError, \
     ClientConnectorError
-from proxypool.db import RedisClient
-from proxypool.err_raise import ResourceDepletionError
-from proxypool.getter import FreeProxyGetter
-from proxypool.settings import TEST_API, GET_PROXIES_TIMEOUT
-from proxypool.settings import VALID_CHECK_CYCLE, POOL_LEN_CHECK_CYCLE
-from proxypool.settings import POOL_LOWER_THRESHOLD, POOL_UPPER_THRESHOLD
+from db import RedisClient
+from err_raise import ResourceDepletionError
+from getter import FreeProxyGetter
+from settings import TEST_API, GET_PROXIES_TIMEOUT
+from settings import VALID_CHECK_CYCLE, POOL_LEN_CHECK_CYCLE
+from settings import POOL_LOWER_THRESHOLD, POOL_UPPER_THRESHOLD
 
 
 class ValidityTester(object):

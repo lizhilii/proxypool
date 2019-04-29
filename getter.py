@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from bs4.element import Tag
-from proxypool.settings import HEADERS
+from settings import HEADERS
 
 
 class ProxyMetaclass(type):

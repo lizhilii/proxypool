@@ -1,6 +1,6 @@
 from flask import Flask, g
-from proxypool.db import RedisClient
-from proxypool.settings import FLASK_HOST, FLASK_PORT
+from db import RedisClient
+from settings import FLASK_HOST, FLASK_PORT
 
 # __all__ = ['app']
 app = Flask(__name__)

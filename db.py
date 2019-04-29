@@ -1,6 +1,6 @@
 import redis
-from proxypool.err_raise import PoolEmptyError
-from proxypool.settings import REDIS__LIST_NAME, REDIS_HOST, REDIS_PASSWORD, REDIS_PORT
+from err_raise import PoolEmptyError
+from settings import REDIS__LIST_NAME, REDIS_HOST, REDIS_PASSWORD, REDIS_PORT
 
 
 class RedisClient(object):
